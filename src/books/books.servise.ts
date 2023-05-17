@@ -1,6 +1,9 @@
+import { Injectable, Scope } from "@nestjs/common";
 import { Book } from "src/interfaces/books/book.interface";
 
-
+@Injectable({
+    scope: Scope.TRANSIENT
+})
 
 export class BooksService {
 

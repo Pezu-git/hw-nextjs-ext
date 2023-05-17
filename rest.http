@@ -9,7 +9,7 @@ GET http://localhost:3000/books/Bible
 
 ###
 
-POST http://localhost:3000/books HTTP/2.0
+POST http://localhost:3000/books HTTP/1.1
 content-type: application/json
 
 {
@@ -20,4 +20,4 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3000/books/Bible HTTP/2.0
+DELETE http://localhost:3000/books/Bible HTTP/1.1
