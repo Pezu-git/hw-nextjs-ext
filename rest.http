@@ -1,0 +1,23 @@
+
+###
+
+GET http://localhost:3000/books
+
+###
+
+GET http://localhost:3000/books/Bible
+
+###
+
+POST http://localhost:3000/books HTTP/2.0
+content-type: application/json
+
+{
+    "title": "Bible",
+    "author": "God",
+    "page_count": 5000
+}
+
+###
+
+DELETE http://localhost:3000/books/Bible HTTP/2.0
